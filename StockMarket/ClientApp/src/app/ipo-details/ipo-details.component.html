@@ -1,0 +1,57 @@
+<div class="grid-table">
+  <div class="thead">
+    <div class="tr">
+      <div class="td">Company</div>
+      <div class="td">Stock Exchange</div>
+      <div class="td">Price per Stock</div>
+      <div class="td">Total No. of Stocks</div>
+      <div class="td">Open Date & Time</div>
+      <!--<div class="td">Remarks</div>-->
+      <div class="td">
+        <button class="btn btn-outline-success" (click)="addIPODetailForm()">Create New</button>
+      </div>
+      <div class="td">
+        <span class="elementToFadeInAndOut" *ngIf="notification">
+          <!--<i class="fas fa-check-circle {{ notification.class }}"></i>-->
+          <!--{{ notification.msg }}-->
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tbody">
+    <form class="tr" [formGroup]="fg" *ngFor="let fg of ipoDetailForms.controls; let i=index" (submit)="recordSubmit(fg)">
+      <div class="td">
+        <select class="form-control" formControlName="companyId">
+          <option value="0">Select</option>
+          <option *ngFor="let item of companyList" value="{{ item.id }}">{{ item.name }}</option>
+        </select>
+      </div>
+      <div class="td">
+        <select class="form-control" formControlName="stockExchangeId">
+          <option value="0">Select</option>
+          <option *ngFor="let item of stockExchangeList" value="{{ item.id }}">{{ item.name }}</option>
+        </select>
+      </div>
+      <div class="td">
+        <input type="number" class="form-control" formControlName="pps" />
+      </div>
+      <div class="td">
+        <input type="number" class="form-control" formControlName="tnos" />
+      </div>
+      <div class="td">
+        <input type="datetime-local" class="form-control" formControlName="openDateTime" />
+      </div>
+      <!--<div class="td">
+        <input class="form-control" formControlName="remarks" />
+      </div>-->
+      <div class="td">
+        <button type="submit" class="btn btn-success" [disabled]="fg.invalid">Submit</button>
+        <button class="btn btn-outline-dark" (click)="onUpdate(fg)" [disabled]="fg.invalid">Update</button> 
+        <button class="btn btn-light ml-1" (click)="onDelete(fg.get('companyId').value, fg.get('stockExchangeId').value, i)">
+          <i class="far fa-trash-alt fa-lg text-danger"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<!--<h2 routerLink="/adminpanel/companies" routerLinkActive="active">Companies</h2>
+<h2 routerLink="/adminpanel/stockexchanges" routerLinkActive="active">Stock Exchanges</h2>
+<h2 routerLink="/adminpanel/cse" routerLinkActive="active">Manage Companies with Stock Exchanges</h2>
+<h2 routerLink="/adminpanel/ipodetails" routerLinkActive="active">IPO Details</h2>
+<router-outlet></router-outlet>-->
+
+<ul class="nav nav-pills nav-fill" style="margin: 10px">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/adminpanel/companies" routerLinkActive="active">Companies</a>
+    </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/adminpanel/stockexchanges" routerLinkActive="active">Stock Exchanges</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/adminpanel/cse" routerLinkActive="active">Manage Companies with Stock Exchanges</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/adminpanel/ipodetails" routerLinkActive="active">IPO Details</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link btn-outline-danger" routerLink="/home/company" routerLinkActive="active">Home</a>
+  </li>
+</ul>
+
+<hr />
+
+<router-outlet></router-outlet>

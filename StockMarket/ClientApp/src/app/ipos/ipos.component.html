@@ -1,0 +1,22 @@
+<table class="table table-striped table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Company</th>
+      <th scope="col">Stock Exchange</th>
+      <th scope="col">Price per Stock</th>
+      <th scope="col">Total No. of Stocks</th>
+      <th scope="col">Open Data & Time</th>
+      <!--<th scope="col">Remarks</th>-->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of ipos">
+      <td scope="row">{{ i.company }}</td>
+      <td scope="row">{{ i.stockExchange }}</td>
+      <td scope="row">{{ i.ipo.pps }}</td>
+      <td scope="row">{{ i.ipo.tnos }}</td>
+      <td scope="row">{{ i.ipo.openDateTime | date:'full' }}</td>
+      <!--<td scope="row">{{ i.ipo.remarks }}</td>-->
+    </tr>
+  </tbody>
+</table>

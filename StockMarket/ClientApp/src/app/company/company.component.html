@@ -1,0 +1,26 @@
+<p style="text-align:center"><strong>Search: </strong> <input #pat (keyup)="onSearch(pat.value)" /></p>
+
+<table class="table table-striped table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Turnover</th>
+      <th scope="col">CEO</th>
+      <th scope="col">Board of Directors</th>
+      <th scope="col">Listed in Stock Exchanges</th>
+      <th scope="col">Sector</th>
+      <th scope="col">Brief</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of companies">
+      <td scope="row">{{ i.name }}</td>
+      <td scope="row">{{ i.turnover }}</td>
+      <td scope="row">{{ i.ceo }}</td>
+      <td scope="row">{{ i.bod }}</td>
+      <td scope="row">{{ i.stockExchanges }}</td>
+      <td scope="row">{{ i.sector  }}</td>
+      <td scope="row">{{ i.brief }}</td>
+    </tr>
+  </tbody>
+</table>

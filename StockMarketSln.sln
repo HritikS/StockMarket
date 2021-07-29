@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarket", "StockMarket\StockMarket.csproj", "{399456B6-C04B-4832-B3C1-D0FA23D4561B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{6BD8746A-3B83-46EA-AB43-B358560FABF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{399456B6-C04B-4832-B3C1-D0FA23D4561B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399456B6-C04B-4832-B3C1-D0FA23D4561B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399456B6-C04B-4832-B3C1-D0FA23D4561B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399456B6-C04B-4832-B3C1-D0FA23D4561B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD8746A-3B83-46EA-AB43-B358560FABF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD8746A-3B83-46EA-AB43-B358560FABF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD8746A-3B83-46EA-AB43-B358560FABF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD8746A-3B83-46EA-AB43-B358560FABF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0ADAE9D-8516-497C-B772-727D7CF7CEF4}
+	EndGlobalSection
+EndGlobal
